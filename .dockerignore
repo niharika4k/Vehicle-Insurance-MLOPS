@@ -1,0 +1,12 @@
+#Files that docker need to ignore, to not to include them as dependencies and to decrease the size of docker image.
+artifact
+venv
+env
+.gitignore
+logs
+template.py
+demo.py
+README.md
+LICENSE
+src.egg.-info
+notebook
