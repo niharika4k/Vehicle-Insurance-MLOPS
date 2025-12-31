@@ -120,10 +120,11 @@
       sudo usermod -aG docker ubuntu
       newgrp docker
 
-29. Next step is to connect Github with EC2(Self hosted runner):
-      * select your project on Github >> go to settings >> Actions >> Runner >> New self hosted runner
+29. Next step is to connect Github with EC2(Self hosted runner): (This process helps us to understand to 
+tell github action to run my cicd app on self hosted linux ec2 machine--it gives you the 2 step process to do that)
+     * select your project on Github >> go to settings >> Actions >> Runner >> New self hosted runner
         >> Select OS (Linux) >> Now step by step run all "Download" related commands on EC2 server 
-        >> run first "Configure" command (hit enter instead of setting a runner group, runner name: self-hosted)
+        >> run first "Configure" command (hit enter instead of setting a runner group, runner name: self-hosted)-- you are configuring git-hub actions on ec2 machine
         >> enter any additional label (hit enter to skip) >> name of work folder (again hit enter)
         >> Now run second "Configure" command (./run.sh) and runner will get connected to Github
         >> To crosscheck, go back to Github and click on Runner and you will see runner state as "idle"
